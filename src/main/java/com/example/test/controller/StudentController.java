@@ -10,9 +10,14 @@ import java.util.List;
 @RestController
 @RequestMapping("/students")
 @CrossOrigin(
-    origins = "https://websinhvien.netlify.app",
-    allowedHeaders = "*"
+    origins = {
+        "https://websinhvien.netlify.app",
+        "https://web-kwid.onrender.com" // ← thêm Render
+    },
+    allowedHeaders = "*",
+    methods = {RequestMethod.GET, RequestMethod.POST, RequestMethod.PUT, RequestMethod.DELETE}
 )
+
 
 
 

@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: backend
+    env: java
+    plan: free
+    rootDir: Backend
+    buildCommand: ./mvnw clean install
+    startCommand: ./mvnw spring-boot:run
+    envVars:
+      - key: SPRING_DATA_MONGODB_URI
+        value: mongodb+srv://hoang45682:Hoang2005@student.ylczdef.mongodb.net/student?retryWrites=true&w=majority

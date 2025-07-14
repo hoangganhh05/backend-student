@@ -9,7 +9,14 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/students")
-@CrossOrigin(origins = "http://localhost:3001")
+@CrossOrigin(
+    origins = "https://websinhvien.netlify.app",
+    allowedHeaders = "*"
+)
+
+
+
+
 public class StudentController {
 
     @Autowired

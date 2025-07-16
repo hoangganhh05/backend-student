@@ -12,7 +12,8 @@ import java.util.List;
 @CrossOrigin(
     origins = {
         "https://websinhvien.netlify.app",
-        "https://web-kwid.onrender.com" // ← thêm Render
+        "https://web-kwid.onrender.com",
+        "https://www.anhhoangg.id.vn" // ← thêm Render
     },
     allowedHeaders = "*",
     methods = {RequestMethod.GET, RequestMethod.POST, RequestMethod.PUT, RequestMethod.DELETE}
